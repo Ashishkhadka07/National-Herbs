@@ -1,0 +1,112 @@
+.whyus-section {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  .container {
+    position: relative;
+    z-index: 2;
+
+    .section-header{
+
+      img{
+        height: 50px;
+        width: auto;
+      }
+    }
+  }
+
+  .green-bottom-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 55%;
+    width: 100%;
+    background-color: #034d1a;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    z-index: 1;
+  }
+
+  .whyus-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .whyus-card {
+    background: #fff;
+    border-radius: 20px;
+    width: 260px;
+    height: 360px;
+    z-index: 2;
+    padding: 25px 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+      transform: rotateZ(-1deg) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 77, 26, 0.2);
+    }
+    img {
+      color: $primary;
+    }
+
+    .img-circle {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 15px;
+      border: 5px solid $primary;
+
+      i {
+        font-size: 1.8rem;
+        line-height: 90px;
+        color: $primary;
+      }
+    }
+
+    .title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: $secondary;
+    }
+
+    .read-more {
+      font-weight: 600;
+      color: $secondary;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary;
+      }
+
+      span {
+        font-size: 1.1rem;
+      }
+    }
+
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
+  }
+}
